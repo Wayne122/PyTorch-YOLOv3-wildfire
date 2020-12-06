@@ -70,9 +70,9 @@ def arg_parse():
 
 
 if __name__ == '__main__':
-    cfgfile = 'config/yolov3-kitti.cfg'
-    weightsfile = "weights/yolov3-kitti.weights"
-    num_classes = 8
+    cfgfile = 'config/yolov3-wildfire.cfg'
+    weightsfile = "weights/yolov3-wildfire.weights"
+    num_classes = 2
     classes = load_classes('data/wildfire.names')
     cvfont = cv2.FONT_HERSHEY_PLAIN
     # Bounding-box colors
@@ -85,7 +85,6 @@ if __name__ == '__main__':
     start = 0
     
     CUDA = torch.cuda.is_available()
-    num_classes = 8
     bbox_attrs = 5 + num_classes
     
     model = Darknet(cfgfile)
