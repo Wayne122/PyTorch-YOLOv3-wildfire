@@ -4,6 +4,5 @@ torch
 torchvision
 pillow
 matplotlib
-visdom
 opencv-python
 tqdm
