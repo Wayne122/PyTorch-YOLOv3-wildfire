@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from matplotlib.ticker import NullLocator
 
-kitti_weights = 'weights/yolov3_wildfire.weights'
+kitti_weights = 'weights/yolov3-wildfire.weights'
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--image_folder', type=str, default='data/samples/', help='path to dataset')
