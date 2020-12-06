@@ -290,7 +290,7 @@ for epoch in range(opt.epochs):
     
     if(mAP > best_mAP):
         best_mAP = mAP
-        model.save_weights("%s/kitti_best.weights" % (opt.checkpoint_dir))
+        model.save_weights("%s/wildfire_best.weights" % (opt.checkpoint_dir))
         print("New Best AP appear !!! %f" % best_mAP)
         test_data_file.flush()
     
