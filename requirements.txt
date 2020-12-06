@@ -1,0 +1,9 @@
+scikit-image
+numpy
+torch
+torchvision
+pillow
+matplotlib
+visdom
+opencv-python
+tqdm
