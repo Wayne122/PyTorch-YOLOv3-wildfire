@@ -20,38 +20,29 @@ Minimal implementation of YOLOv3 in PyTorch.
     $ cd PyTorch-YOLOv3-wildfire/
     $ sudo pip3 install -r requirements.txt
 
-
 ##### Download pretrained weights
 if you wan use pretrained darknet-53 on IMAGENET weights, please download [darknet53.conv.74](https://pjreddie.com/media/files/darknet53.conv.74),and put it into `checkpoints/`
 
-##### Download Kitti 
-
-[The KITTI Vision Benchmark Suite](http://www.cvlibs.net/datasets/kitti/eval_object.php)
-
-and you should transfrom kitti lable to coco label, by using [label_transform](label_transform/README.md)
-
 ## Inference
-Uses pretrained weights to make predictions on images. `weights/yolov3-kitti.weights` was trained by kitti data set.
+Uses pretrained weights to make predictions on images. `weights/wildfire_best.weights` was trained by wildfire data set.
 `python3 detect.py --image_folder /data/samples`
 
-<p align="center"><img src="assets/12.png" width="480"\></p>
-<p align="center"><img src="assets/20.png" width="480"\></p>
-<p align="center"><img src="assets/18.png" width="480"\></p>
+<p align="center"><img src="assets/0.png" width="480"\></p>
+<p align="center"><img src="assets/1.png" width="480"\></p>
+<p align="center"><img src="assets/2.png" width="480"\></p>
 <p align="center"><img src="assets/3.png" width="480"\></p>
-
-Small objects detection
-
 <p align="center"><img src="assets/4.png" width="480"\></p>
+<p align="center"><img src="assets/5.png" width="480"\></p>
 
 ## Detect
 
 run`detect.py` to detect objects, and please  put samples into `data/samples`
-defult weights files is `weights/kitti.weights`
+defult weights files is `weights/wildfire_best.weights`
 
 ## Video
 
 run `video.py` to detect objects from a webcam or a video file.
-On I7 7700 8G GTX1070 FPS is 22 cause some problems, test resized images is really faster than resizeing images and then inference.
+
 ## Test
 
 run `test.py`
@@ -59,7 +50,7 @@ run `test.py`
 ## Train
 Data augmentation as well as additional training tricks remains to be implemented. PRs are welcomed!
 ```
-    train.py [-h] [--epochs EPOCHS] [--image_folder IMAGE_FOLDER]
+    train.py [-h] [--epochs EPOCHS]
                 [--batch_size BATCH_SIZE]
                 [--model_config_path MODEL_CONFIG_PATH]
                 [--data_config_path DATA_CONFIG_PATH]
