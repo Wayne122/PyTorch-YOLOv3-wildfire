@@ -19,12 +19,10 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from matplotlib.ticker import NullLocator
 
-kitti_weights = 'weights/yolov3-wildfire.weights'
-
 parser = argparse.ArgumentParser()
 parser.add_argument('--image_folder', type=str, default='data/samples/', help='path to dataset')
 parser.add_argument('--config_path', type=str, default='config/yolov3-wildfire.cfg', help='path to model config file')
-parser.add_argument('--weights_path', type=str, default=kitti_weights, help='path to weights file')
+parser.add_argument('--weights_path', type=str, default='weights/yolov3-wildfire.weights', help='path to weights file')
 parser.add_argument('--class_path', type=str, default='data/wildfire.names', help='path to class label file')
 parser.add_argument('--conf_thres', type=float, default=0.8, help='object confidence threshold')
 parser.add_argument('--nms_thres', type=float, default=0.4, help='iou thresshold for non-maximum suppression')
