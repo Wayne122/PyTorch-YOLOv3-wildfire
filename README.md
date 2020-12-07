@@ -23,7 +23,7 @@ Minimal implementation of YOLOv3 in PyTorch.
 ##### Download pretrained weights
 if you wan use pretrained darknet-53 on IMAGENET weights, please download [darknet53.conv.74](https://pjreddie.com/media/files/darknet53.conv.74),and put it into `checkpoints/`
 
-if you just want a pretrained weights on kitti dataset for test or detect, please download [pretrained weights file](https://drive.google.com/file/d/1Ih9eaY8Io2yeIlejYvAH0F_m2bCaKldQ/view?usp=sharing), and put it into `weights` folder, the path:
+if you just want a pretrained weights on kitti dataset for test or detect, please download [pretrained weights file](https://drive.google.com/file/d/10Vkp9b1Yz4egEUhH3kJcAcMf7b0Fr5YE/view?usp=sharing), and put it into `weights` folder, the path:
 `weights/yolov3_wildfire.weights`
 
 ## Inference
