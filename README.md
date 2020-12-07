@@ -40,7 +40,7 @@ Uses pretrained weights to make predictions on images. `weights/wildfire_best.we
 ## Detect
 
 run`detect.py` to detect objects, and please  put samples into `data/samples`
-defult weights files is `weights/wildfire_best.weights`
+defult weights files is `weights/yolov3-wildfire.weights`
 
 ## Video
 
