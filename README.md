@@ -2,7 +2,7 @@
 Minimal implementation of YOLOv3 in PyTorch.
 
 ## Table of Contents
-- [PyTorch-YOLOv3](#pytorch-yolov3-wildfire)
+- [PyTorch-YOLOv3-wildfire](#pytorch-yolov3-wildfire)
   * [Table of Contents](#table-of-contents)
   * [Installation](#installation)
   * [Inference](#inference)
